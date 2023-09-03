@@ -17,4 +17,7 @@ jobs:
           cache: npm
       - run: yarn install --frozen-lockfile
       - run: yarn run lint
-      - run: yarn run lint-mdx
+      - name: Lint and fix MDX
+        env:
+          MDX_LINT_CONFIG: .eslintrc.json  
+        run: yarn run lint-mdx --config "$MDX_LINT_CONFIG"

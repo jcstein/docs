@@ -3,5 +3,8 @@
   "settings": {
     "mdx/code-blocks": true,
     "mdx/language-mapper": {}
+  },
+  "rules": {
+    // define own rules
   }
 }
